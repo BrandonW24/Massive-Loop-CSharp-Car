@@ -1,6 +1,7 @@
 # Massive-Loop-CSharp-Car
 This is an implementation of an arcadey style vehicle controller system that allows both VR and Desktop players to drive in Massive Loop!
-The original code was first written in LUA by Yashar Ahari, then translated into C# by Brandon Withington
+
+*The original code was first written in LUA by Yashar Ahari, then translated into C# by Brandon Withington*
 
 # Car Driver System  
 
