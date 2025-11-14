@@ -279,8 +279,8 @@ currentDriver.LoadPlayerThumbnail((texture) =>
 - `currentDriver` cleared  
 
 ---
-
-## Setup Instructions (If You want to only use the script and use a different, custom car)
+## setup-instructions
+# If You want to only use the script with a different, custom car
 
 1. Add **`CarDriver_CSharp.cs`** to your vehicle GameObject.
 2. Assign the following fields in the Inspector:
