@@ -45,9 +45,19 @@ This is a feature-rich vehicle driving system built for the MassiveLoop (ML) SDK
 - **Speedometer & Tachometer needles**
 - **Reverse gear logic**
 
+The CarDriver_CSharp script functions as a complete vehicle simulation system designed for MassiveLoop’s VR/desktop framework. It combines physics-based wheel control, an internally simulated engine, a dynamic gearbox, responsive steering, and multiplayer-safe network synchronization. 
+
+At its core, this car emulates a believable car engine using RPM calculations derived from wheel rotation, gradually blending between idle, startup, and acceleration states while applying torque through the rear wheels based on a mathematically modeled engine torque curve. 
+
+A lightweight automatic transmission constantly adjusts gears up or down depending on RPM load, ensuring smooth forward acceleration without manual shifting. Steering is handled through either a traditional linear system or an optional Ackerman steering model, which turns the wheels at different angles for more realistic cornering.
+
 The main logic is contained in the script:
 
 `CarDriver_CSharp.cs`
+
+While wheel collider logic can be found in:
+
+`Wheel.cs`
 
 ---
 
