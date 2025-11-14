@@ -280,13 +280,36 @@ currentDriver.LoadPlayerThumbnail((texture) =>
 
 ---
 
-## Setup Instructions
+## Setup Instructions (If You want to only use the script and use a different, custom car)
 
 1. Add **`CarDriver_CSharp.cs`** to your vehicle GameObject.
-2. Ensure your scene has:
-   - Proper ML setup (Our MassiveLoop SDK)
+2. Assign the following fields in the Inspector:
+- **Wheel Colliders**: `wheelFR`, `wheelFL`, `wheelBR`, `wheelBL`
+- **Rigidbody**: `Car_RB`
+- **Steering Wheel**: `steeringWheel`
+- **Speed Dial**: `speedDial`
+- **Engine RPM Dial**: `engineRPMDial`
+- **Center of Mass**: `centerOfMass`
+- **ML Station**: `station`
+- **Sync Object**: `syncObject` (empty child used for network sync)
+- **Audio Sources**: `engineStartupAudio`, `engineIdleAudio`, `engineAccelerationAudio`, `engineDriveAudio`, `windAudio`
+- (Optional) **Decals**: `Decal_1`, `Decal_2` for player thumbnail projection
+3. Ensure your scene has:
+   - Proper ML setup (Our MassiveLoop SDK, world descriptor, and spawn point)
    - The car’s wheels positioned correctly for the colliders
-3. Upload or locally build and run through our SDK and sit in the car’s station to take control.
+4. Upload your world or locally build and run through our SDK and sit in the car’s station to take control.
+
+---
+
+---
+## Setup Instructions (If You want to use the given car)
+
+1. Ensure your scene has:
+   - Proper ML setup (Our MassiveLoop SDK, world descriptor, and spawn point)
+   - The car’s wheels positioned correctly for the colliders
+2. Drag and drop the ML_Go-Kart asset into your world.
+3. Upload your world or locally build and run through our SDK and sit in the car’s station to take control.
+4. Have fun! 
 
 ---
 
