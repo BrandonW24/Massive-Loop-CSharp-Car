@@ -300,8 +300,6 @@ currentDriver.LoadPlayerThumbnail((texture) =>
 4. Upload your world or locally build and run through our SDK and sit in the car’s station to take control.
 
 ---
-
----
 ## Setup Instructions (If You want to use the given car)
 
 1. Ensure your scene has:
