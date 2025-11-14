@@ -191,6 +191,8 @@ Pitch and volume adjustments create continuous engine progression.
 
 | Action                         | Control                                             |
 | ------------------------------ | --------------------------------------------------- |
+| **Getting in**                 | Look at the Seat and Press `R`                      |
+| **Getting Out**                | Press `R` While in the car                          |
 | **Throttle (Drive Forward)**   | `W` / Up input (`KeyboardMove.y > 0.5`)             |
 | **Reverse / Brake**            | `S` / Down input (`KeyboardMove.y < -0.5`)          |
 | **Steering Left**              | `A` (`KeyboardMove.x < -0.5`)                       |
@@ -207,6 +209,8 @@ Throttle smoothly ramps up and down.
 
 | Action                      | VR Input                                                   |
 | --------------------------- | ---------------------------------------------------------- |
+| **Getting in**              | Point at the seat with one of your hands and Press `A`     |
+| **Getting Out**             | Press `A`  When Inside the vehicle                         |
 | **Throttle (forward/back)** | Left Thumbstick `Y` (`input.LeftControl.y`)                |
 | **Steering**                | Right Thumbstick `X` (`input.RightControl.x`)              |
 | **Curved Steering Option**  | Uses tangent curve when `useCurvedSteeringInVR` is enabled |
@@ -279,21 +283,10 @@ currentDriver.LoadPlayerThumbnail((texture) =>
 ## Setup Instructions
 
 1. Add **`CarDriver_CSharp.cs`** to your vehicle GameObject.
-2. Assign the following fields in the Inspector:
-   - **Wheel Colliders**: `wheelFR`, `wheelFL`, `wheelBR`, `wheelBL`
-   - **Rigidbody**: `Car_RB`
-   - **Steering Wheel**: `steeringWheel`
-   - **Speed Dial**: `speedDial`
-   - **Engine RPM Dial**: `engineRPMDial`
-   - **Center of Mass**: `centerOfMass`
-   - **ML Station**: `station`
-   - **Sync Object**: `syncObject` (empty child used for network sync)
-   - **Audio Sources**: `engineStartupAudio`, `engineIdleAudio`, `engineAccelerationAudio`, `engineDriveAudio`, `windAudio`
-   - (Optional) **Decals**: `Decal_1`, `Decal_2` for player thumbnail projection
-3. Ensure your scene has:
-   - Proper ML setup (MassiveLoop client, stations, etc.)
+2. Ensure your scene has:
+   - Proper ML setup (Our MassiveLoop SDK)
    - The car’s wheels positioned correctly for the colliders
-4. Press Play and sit in the car’s station to take control.
+3. Upload or locally build and run through our SDK and sit in the car’s station to take control.
 
 ---
 
