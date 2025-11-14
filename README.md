@@ -6,6 +6,8 @@ This is an implementation of an arcadey style vehicle controller system that all
 
 *A fully simulated, VR-ready and desktop-compatible vehicle controller for the MassiveLoop SDK.*
 
+![Cart Preview](Cart.png)
+
 ---
 
 ## Table of Contents
