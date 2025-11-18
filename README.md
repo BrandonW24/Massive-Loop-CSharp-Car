@@ -5,7 +5,7 @@ This is an implementation of an arcadey style vehicle controller system that all
 
 # Car Driver System  
 
-*A fully simulated, VR-ready and desktop-compatible vehicle controller for the MassiveLoop SDK.*
+*A fully simulated, VR-ready and desktop-compatible vehicle controller for the Massive Loop SDK.*
 
 ![Cart Preview](Cart.png)
 
@@ -33,7 +33,7 @@ This is an implementation of an arcadey style vehicle controller system that all
 
 ## Overview
 
-This is a feature-rich vehicle driving system built for the MassiveLoop (ML) SDK. It supports:
+This is a feature-rich vehicle driving system built for the Massive Loop (ML) SDK. It supports:
 
 - **Realistic wheel collider driving**
 - **Engine RPM simulation**
@@ -45,7 +45,7 @@ This is a feature-rich vehicle driving system built for the MassiveLoop (ML) SDK
 - **Speedometer & Tachometer needles**
 - **Reverse gear logic**
 
-The CarDriver_CSharp script functions as a complete vehicle simulation system designed for MassiveLoop’s VR/desktop framework. It combines physics-based wheel control, an internally simulated engine, a dynamic gearbox, responsive steering, and multiplayer-safe network synchronization. 
+The CarDriver_CSharp script functions as a complete vehicle simulation system designed for Massive Loop’s VR/desktop framework. It combines physics-based wheel control, an internally simulated engine, a dynamic gearbox, responsive steering, and multiplayer-safe network synchronization. 
 
 At its core, this car emulates a believable car engine using RPM calculations derived from wheel rotation, gradually blending between idle, startup, and acceleration states while applying torque through the rear wheels based on a mathematically modeled engine torque curve. 
 
@@ -181,7 +181,7 @@ z = direction (1 = forward, -1 = reverse)
 - When **local player** is seated → write to `syncObject`  
 - When **remote player** is watching → read from `syncObject`  
 
-This ensures identical behavior across clients in a MassiveLoop multiplayer world.
+This ensures identical behavior across clients in a Massive Loop multiplayer world.
 
 ---
 
@@ -308,7 +308,7 @@ currentDriver.LoadPlayerThumbnail((texture) =>
 - **Audio Sources**: `engineStartupAudio`, `engineIdleAudio`, `engineAccelerationAudio`, `engineDriveAudio`, `windAudio`
 - (Optional) **Decals**: `Decal_1`, `Decal_2` for player thumbnail projection
 3. Ensure your scene has:
-   - Proper ML setup (Our MassiveLoop SDK, world descriptor, and spawn point)
+   - Proper ML setup (Our Massive Loop SDK, world descriptor, and spawn point)
    - The car’s wheels positioned correctly for the colliders
 4. Upload your world or locally build and run through our SDK and sit in the car’s station to take control.
 
@@ -316,7 +316,7 @@ currentDriver.LoadPlayerThumbnail((texture) =>
 ## Setup Instructions (If You want to use the given car)
 
 1. Ensure your scene has:
-   - Proper ML setup (Our MassiveLoop SDK, world descriptor, and spawn point)
+   - Proper ML setup (Our Massive Loop SDK, world descriptor, and spawn point)
    - The car’s wheels positioned correctly for the colliders
 2. Drag and drop the ML_Go-Kart asset into your world.
 3. Upload your world or locally build and run through our SDK and sit in the car’s station to take control.
